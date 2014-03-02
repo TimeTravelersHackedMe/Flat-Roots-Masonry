@@ -1,0 +1,122 @@
+// Social Buttons
+// ------------------------
+
+@btnFacebookBackground:             #2e4a88;
+@btnFacebookBackgroundHighlight:    lighten(@btnFacebookBackground, 10%);
+
+@btnTwitterBackground:              #008DDE;
+@btnTwitterBackgroundHighlight:     lighten(@btnTwitterBackground, 10%);
+
+@btnGoogleBackground:               #CC3622;
+@btnGoogleBackgroundHighlight:      lighten(@btnGoogleBackground, 10%);
+
+@btnRssBackground:                  #F88F25;
+@btnRssBackgroundHighlight:         lighten(@btnRssBackground, 10%);
+
+// Icon Buttons
+// -------------------------
+
+.btn-icon {
+	padding-left: 10px;
+	padding-right: 10px;
+	em {
+	    display: inline-block;
+	    width: 18/14em;
+	    text-align: center;
+	}
+}
+
+// Transparent Buttons
+// -------------------------
+
+.btn-transparent {
+	background-color: transparent;
+  .transition(all .2s ease);
+  &:hover {
+    color: #fff !important;
+    .transition(all .2s ease);
+  }
+  &.btn-primary {
+    color: @btn-primary-bg;
+  }
+  &.btn-danger {
+    color: @btn-danger-bg;
+  }
+  &.btn-warning {
+    color: @btn-warning-bg;
+  }
+  &.btn-info {
+    color: @btn-info-bg;
+  }
+  &.btn-success {
+    color: @btn-success-bg;
+  }
+}
+
+
+// Social Buttons
+// -------------------------
+
+.btn-facebook {
+  .button-variant(#fff, @btnFacebookBackground, @btnFacebookBackground);
+  margin-bottom: 5px;
+}
+
+.btn-twitter {
+  .button-variant(#fff, @btnTwitterBackground, @btnTwitterBackground);
+  margin-bottom: 5px;
+}
+
+.btn-google {
+  .button-variant(#fff, @btnGoogleBackground, @btnGoogleBackground);
+  margin-bottom: 5px;
+}
+
+.btn-rss {
+  .button-variant(#fff, @btnRssBackground, @btnRssBackground);
+}
+
+.btn-facebook em, .btn-twitter em, .btn-google em, .btn-rss em {
+  display: inline-block !important;
+  text-align: center;
+  width: 1em;
+}
+
+// Turnable buttons
+// -------------------------
+
+[class*="btn-turn-"],
+[class*="btn-turn-"]:hover {
+  .transition(~"color .2s ease, background-color .2s ease");
+}
+
+.btn-turn-primary {
+  &:hover {
+    .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  }
+}
+// Warning appears are orange
+.btn-turn-warning {
+  &:hover {
+    .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+  }
+}
+// Danger and error appear as red
+.btn-turn-danger {
+  &:hover {
+   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+  }
+}
+// Success appears as green
+.btn-turn-success {
+  &:hover {
+    .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+  }
+}
+// Info appears as a neutral blue
+.btn-turn-info {
+  &:hover {
+    .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+  }
+}
+

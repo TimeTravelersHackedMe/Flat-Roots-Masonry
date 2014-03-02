@@ -1,5 +1,5 @@
 /*!
- * Roots 6.5.2
+ * Roots 6.5.0
  */
 
 @import "bootstrap/bootstrap.less";
@@ -8,7 +8,7 @@
    Base
    ========================================================================== */
 
-body { }
+body {padding-top: 50px;}
 
 
 
@@ -17,7 +17,9 @@ body { }
    ========================================================================== */
 
 .banner { }
-
+.navbar-default,
+.navbar-inverse {
+  border-top: 2px solid @link-color;}
 
 
 /* ==========================================================================
@@ -76,15 +78,15 @@ body { }
 .alignleft { float: left; }
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
-
-
-
+.logo-brand {padding: 14px;}
+img.logo {max-height: 32px;}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm-min) { }
+@media (min-width: @screen-sm) { }
 
-@media (min-width: @screen-md-min) { }
+@media (min-width: @screen-md) {
+ }
 
-@media (min-width: @screen-lg-min) { }
+@media (min-width: @screen-lg) { }
