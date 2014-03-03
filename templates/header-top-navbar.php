@@ -22,9 +22,9 @@
         endif;
       ?>
 <?php if (is_user_logged_in()) {  ?>
-    <a type="button" class="btn btn-primary navbar-btn navbar-right" href="<?php echo wp_logout_url( home_url() ); ?>"><em class="icon-signout icon-large"></em> Log Out</a>
+    <a type="button" class="btn btn-primary navbar-btn navbar-right" href="<?php echo wp_logout_url( home_url() ); ?>"><em class="fa fa-sign-out fa-lg"></em> Log Out</a>
 <?php } else { ?>
-<button type="button" data-toggle="modal" href="#signin" class="btn btn-primary navbar-btn navbar-right"><em class="icon-signin icon-large"></em> Log In</button>
+<button type="button" data-toggle="modal" href="#signin" class="btn btn-primary navbar-btn navbar-right"><em class="fa fa-sign-in fa-large"></em> Log In</button>
 <?php } ?>
 </nav>
 </div>
@@ -34,26 +34,26 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title"><em class="icon-signin icon-large"></em> Log In</h4>
+          <h4 class="modal-title"><em class="fa fa-sign-in fa-lg"></em> Log In</h4>
         </div>
         <div class="modal-body">
         <p class="status"></p>
 <ul class="list-inline text-center">
 <li>
-<a href="" class="btn btn-icon btn-facebook"><em class="icon-facebook"></em> Facebook</a>
+<a href="" class="btn btn-icon btn-facebook"><em class="fa fa-facebook"></em> Facebook</a>
 </li>
 <li>
-<a href=""  class="btn btn-icon btn-twitter"><em class="icon-twitter"></em> Twitter</a>
+<a href=""  class="btn btn-icon btn-twitter"><em class="fa fa-twitter"></em> Twitter</a>
 </li>
 <li>
-<a href="" class="btn btn-icon btn-google"><em class="icon-google-plus"></em> Google</a>
+<a href="" class="btn btn-icon btn-google"><em class="fa fa-google-plus"></em> Google</a>
 </li>
 </ul>
         <form id="login" action="login" method="post" role="form" >
                     <div class="form-group">
                       <div class="input-group input-icon">
                         <span class="input-group-addon">
-                          <em class="icon-user icon-fixed-width"></em>
+                          <em class="fa fa-user fa-fw"></em>
                         </span>
                         <input type="text" id="username" name="username" class="form-control" placeholder="Username">
                       </div>
@@ -61,7 +61,7 @@
                     <div class="form-group">
                       <div class="input-group input-icon">
                         <span class="input-group-addon">
-                          <em class="icon-key icon-fixed-width"></em>
+                          <em class="fa fa-key fa-fw"></em>
                         </span>
                         <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                       </div>
